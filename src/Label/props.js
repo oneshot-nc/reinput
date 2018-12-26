@@ -10,6 +10,8 @@ export const propTypes = {
   focused: PropTypes.bool,
   fontFamily: PropTypes.string,
   fontSize: PropTypes.number,
+  labelFontSize: PropTypes.number,
+  labelFontWeight: PropTypes.string,
   fontWeight: PropTypes.string,
   hasValue: PropTypes.bool,
   label: PropTypes.string,
