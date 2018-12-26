@@ -15,15 +15,19 @@ export const label = (props = {}) => {
   const activeColor = props.activeColor || props.labelActiveColor
   const focusedColor = props.focused ? activeColor : props.labelColor
   const color = props.error ? props.errorColor : focusedColor
+  const fontSize = props.labelFontSize ? props.labelFontSize : props.fontSize
+  const fontWeight = props.labelFontWeight? props.labelFontWeight : props.fontWeight
+    
+  
 
   return {
     ...pick(props, [
       'fontFamily',
-      'fontSize',
-      'fontWeight',
       'paddingLeft',
       'paddingRight'
     ]),
+    fontSize,
+    fontWeight,
     color,
     paddingLeft: 1, // cursor indicator
     left: '50%',
